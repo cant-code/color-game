@@ -1,0 +1,27 @@
+.white {
+    background-color: white;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background: purple;
+    float: left;
+    margin: 1.66%
+}
+
+.container {
+    max-width: 600px;
+}
+
+.show {
+    visibility: visible!important;
+    opacity: 1;
+    transition: background 1s linear, visibility 0s 0s, opacity 1s linear;
+}
+
+.hide {
+    visibility: hidden!important;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
