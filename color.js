@@ -10,6 +10,7 @@ document.getElementById("easy").onclick = function () {
     difficulty = 'easy';
     document.getElementById("hardef").classList.remove("show");
     document.getElementById("hardef").classList.add("hide");
+    gen();
 };
 
 document.getElementById("hard").onclick = function () {
@@ -19,6 +20,7 @@ document.getElementById("hard").onclick = function () {
     difficulty = 'hard';
     document.getElementById("hardef").classList.remove("hide");
     document.getElementById("hardef").classList.add("show");
+    gen();
 };
 
 document.getElementById("new_color").onclick = gen;
