@@ -3,11 +3,12 @@
 }
 
 .square {
-    width: 150px;
-    height: 150px;
+    width: 30%;
+    padding-bottom: 30%;
     background: purple;
     float: left;
-    margin: 1.66%
+    margin: 1.66%;
+    position: relative;
 }
 
 .container {
@@ -24,4 +25,14 @@
     visibility: hidden!important;
     opacity: 0;
     transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.btn {
+    flex: 0 0 auto !important;
+}
+
+@media (max-width: 423px) {
+    #display-2 {
+        font-size: 3.0rem;
+    }
 }
