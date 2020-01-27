@@ -85,7 +85,7 @@ for (var i = 0; i < things.length; i++) {
             document.getElementById("success").innerHTML = "Try Again!!!";
             this.classList.add("hide");
             chances++;
-            if (((chances === 3) && (difficulty === 'easy')) || ((chances === 5) && (difficulty === 'hard')) || ((chances === 3) && (difficulty === 'medium'))) {
+            if (((chances === 3) && (difficulty === 'easy')) || ((chances === 5) && (difficulty === 'hard')) || ((chances === 4) && (difficulty === 'medium'))) {
                 document.getElementById("success").innerHTML = "You Lost!!";
                 chances = 1;
                 win();
