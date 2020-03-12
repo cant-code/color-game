@@ -97,11 +97,28 @@ for (var i = 0; i < things.length; i++) {
 function win() {
     document.getElementById("jumbotron").style.background = 'rgb(' + r + ', ' + g + ', ' + b + ')';
     document.getElementById("jumbotron").classList.remove("bg-primary");
-    var boxes = document.getElementsByClassName("square");
-    for (var i = 0; i < boxes.length; i++) {
+    if (difficulty === 'medium') {
+        var boxes = document.getElementsByClassName("square");
+        for (var i = 0; i < boxes.length; i++) {
             boxes[i].style.background = 'rgb(' + r + ', ' + g + ', ' + b + ')';
             boxes[i].classList.remove("hide");
             boxes[i].classList.add("show");
+        }
+    } else if (difficulty === 'hard') {
+        var boxes = document.getElementsByClassName("medium");
+        for (var i = 0; i < boxes.length; i++) {
+            boxes[i].style.background = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+            boxes[i].classList.remove("hide");
+            boxes[i].classList.add("show");
+        }
+    }
+    else {
+        var boxes = document.getElementsByClassName("easy");
+        for (var i = 0; i < boxes.length; i++) {
+            boxes[i].style.background = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+            boxes[i].classList.remove("hide");
+            boxes[i].classList.add("show");
+        }
     }
     document.getElementById("new_color").innerText = "Play Again?";
 }
